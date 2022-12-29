@@ -7,44 +7,44 @@ using namespace std;
 int main() {
 
 //har name[5] = "Adam";
-//cout << name;
+// cout << name;
 
 //char name[] = "Adam";
 //out << name;
 
 //char name[] = {'A', 'd', 'a', 'm', '\0'};
-//cout << name;
+// cout << name;
 
-//char ciag[20] = "Programowanie";
-//cout << ciag << endl;
-//cout << ciag[3] << endl;
+//char text[20] = "Programming";
+// cout << text << endl;
+// cout << text[3] << endl;
 
-//char ciag1[] = "Programowanie";
-//char ciag2[20] = "Programowanie";
+//char text1[] = "Programming";
+//char text2[20] = "Programming";
 
-//cout << sizeof(ciag1) << endl;
-//cout << sizeof(ciag2) << endl;
+// cout << sizeof(text1) << endl;
+// cout << sizeof(text2) << endl;
 /*
 char fruit1[20], fruit2[20];
-cout << "Podaj pierwszy owoc: ";
+cout << "Enter first fruit: ";
 cin >> fruit1;
-cout << "Podaj drugi owoc: ";
+cout << "Enter second fruit: ";
 cin >> fruit2;
 
 cout << fruit1 << endl << fruit2 << endl;
 strcpy(fruit1, fruit2);
 cout << fruit1 << endl << fruit2 << endl;
 
-*/ 
+*/
 
-//char name[20];
-//name = "Tomasz";
-//strcpy(name, "Tomasz");
-//cout << name;
+// char name[20];
+// name = "Thomas";
+// strcpy(name, "Thomas");
+// cout << name;
 
-char dane[40];
-strcpy(dane, "Jan");
-strcat(dane, "Kowalski");
-cout << dane;
+char data[40];
+strcpy(data, "John");
+strcat(data, "Smith");
+cout << data;
 return 0;
 }
