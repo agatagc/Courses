@@ -8,29 +8,29 @@ int main() {
 
 
 
-// RELATION OPERATORS 
+// RELATION OPERATORS
 
-int num_5, num_6; 
+int num_5, num_6;
 
-cout  << "enter two numbers: ";
+cout << "enter two numbers: ";
 cin >> num_5 >> num_6;
  
-// Operator porownania ==
+// Comparison operator ==
 cout << num_5 << " == " << num_6 << " : " << (num_5 == num_6) << endl;
 
-// Operator nierownosci !=
+// Inequality operator !=
 cout << num_5 << " != " << num_6 << " : " << (num_5 != num_6) << endl;
 
-// Większy niz >
+// Greater than >
 cout << num_5 << " > " << num_6 << " : " << (num_5 > num_6) << endl;
 
-//Mniejszy niz <
+//Less than <
 cout << num_5 << " < " << num_6 << " : " << (num_5 < num_6) << endl;
 
-// Większy lub rowny >=
+// Greater than or equal to >=
 cout << num_5 << " >= " << num_6 << " : " << (num_5 >= num_6) << endl;
 
-// Mniejszy lub rowny <=
+// Less than or equal to <=
 cout << num_5 << " <= " << num_6 << " : " << (num_5 <= num_6) << endl;
 
 return 0;

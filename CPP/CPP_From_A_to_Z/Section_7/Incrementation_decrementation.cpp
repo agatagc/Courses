@@ -6,18 +6,18 @@ using namespace std;
 
 int main() {
 
-// INKREMENTACJA I DEKREMENTACJA 
+// INKREMENTATION I DEKREMENTATION
 
 
 int num = 3;
 
 cout << num << endl;
 
-//INKREMENTACJA
+//INKREMENTATION
 num++;
 cout << num << endl;
 
-//DEKREMENTACJA
+//DEKREMENTATION
 num--;
 cout << num << endl;
 
@@ -26,17 +26,23 @@ cout << num << endl;
 int num_1 = 10;
 cout << num_1 << endl;
 
-// PRE-INKREMENTACJA
+// PRE-INKREMENTATION
 cout << ++num_1 << endl;
 
-// POST-INKREMENTACJA
+// POST-INKREMENTATION
 cout << num_1++ << endl;
 cout << num_1 << endl << endl;
 
 cout << num_1 << endl;
-// PRE-DEKREMENTACJA
+
+
+
+// PRE-DEKREMENTATION
 cout << --num_1 << endl;
-// POST-DEKREMENTACJA   
+
+
+
+// POST-DEKREMENTATION 
 cout << num_1-- << endl;
 cout << num_1 << endl;
 
