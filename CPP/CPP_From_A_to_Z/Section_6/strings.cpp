@@ -57,8 +57,10 @@ int main() {
 //string s(15, '*');
 //cout << s;
 
+
+
 //Przyklad 7
-/*
+
 string s1 = "C";
 string s2 = "C++";
 string s3 = "Phyton";
@@ -69,7 +71,7 @@ cout << (s1 == s2) << endl;
 cout << (s1 != s3) << endl; 
 cout << (s1 < s4) << endl;
 cout << (s1 > s4) << endl;
-*/
+
 
 // przyklad 8
 
@@ -78,10 +80,10 @@ cout << (s1 > s4) << endl;
 //cout << s.substr(16, 18) << endl;
 
 
-string s;
+//string s;
 
-getline(cin, s, '$');
-cout << s << endl;
+//getline(cin, s, '$');
+//cout << s << endl;
 
 return 0;
 }
