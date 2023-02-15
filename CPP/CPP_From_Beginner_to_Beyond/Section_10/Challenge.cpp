@@ -30,13 +30,11 @@ Reuse existing functionality in libraries and in the std::str ing class!
 
 int main() 
 {
-
     string alphabet {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
     string key {"XZNLWEBGJHQDYVTKFUOMPCIASRxznlwebgjhqdyvtkfuompciasr"};
 
-    
-
-
+    string secret_message {};
+    cout << "";
 
     return 0;
 }
