@@ -66,6 +66,7 @@ namespace ProgramDoWyswietlaniaLosowegoDzialaniaMatematycznego
         {
             CheckTheResult();
         }
+
         void ShowTheAnswer()
         {
             label1.Text = num1 + " * " + num2 + " = " + result;
