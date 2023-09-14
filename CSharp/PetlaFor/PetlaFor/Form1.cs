@@ -16,10 +16,12 @@ namespace PetlaFor
         {
             InitializeComponent();
 
-            for(int i = 0; i < 5; i++) // i++ to to samo co i = i + 1,  petla for sluzy do powtarzania czynnosci w tym przypadku 5 razy   
+            label1.Text = ""; // label1.Text to jest tekst w labelu, label1.Text = "" to jest czyszczenie labela
+            for(int i = 0; i < 21; i+=2) // i+=2 zwieksza sie o 2, mamy tylko liczby parzyste
+                                         //  i++ to to samo co i = i + 1,  petla for sluzy do powtarzania czynnosci w tym przypadku 5 razy   
                                         // i = 0 to jest poczatek petli, i < 10 to jest warunek, i++ to jest zwiekszanie o 1
             {
-                label1.Text += i.ToString() + " "; // += to jest to samo co label1.Text = label1.Text + i.ToString() + " ";
+                label1.Text += i + " "; // += to jest to samo co label1.Text = label1.Text + i.ToString() + " ";
             }
         }
     }
