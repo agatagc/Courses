@@ -34,7 +34,7 @@ namespace Challange1_SortingListOfNumbers
 
             for (int i = 0; i <= 100; i++)
             {
-                numbers.Add(rand.Next(1, 101)); // Creating number
+                numbers.Add(this.rand.Next(1, 101)); // Creating number
             }
 
             UpdateListbox(numbers);
