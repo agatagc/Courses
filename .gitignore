@@ -282,8 +282,9 @@ _Pvt_Extensions
 *CurrentMaximizeLayout.dwlt
 *Search.settings
 *EditorUserSettings.asset
-ShootingRange/UserSettings/Search.index
-ShootingRange/UserSettings/HDRPUserSettings.asset
+*Search.index
+*HDRPUserSettings.asset
+*URPUserSettings.asset
 
 # FMOD
 [Ll]ibrary/
