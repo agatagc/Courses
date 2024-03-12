@@ -12,6 +12,11 @@ namespace CarWorkshop.MVC.Controllers
         {
             this.carWorkshopService = carWorkshopService;
         }
+        public async Task<IActionResult> Index()
+        {
+            var carWorkshops = await this.carWorkshopService.GetAll();
+            return View(carWorkshops);
+        }
 
         public IActionResult Create()
         {
