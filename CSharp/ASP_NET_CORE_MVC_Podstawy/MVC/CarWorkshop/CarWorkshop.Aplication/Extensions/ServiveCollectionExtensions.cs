@@ -1,4 +1,4 @@
-﻿using CarWorkshop.Aplication.CarWorkshop;
+﻿using CarWorkshop.Aplication.CarWorkshop.Commands.CreateCarWorkshop;
 using CarWorkshop.Aplication.Mappings;
 using CarWorkshop.Aplication.Services;
 using FluentValidation;
@@ -15,7 +15,7 @@ namespace CarWorkshop.Aplication.Extensions
 
             services.AddAutoMapper(typeof(CarWorkshopMappingProfile));
 
-            services.AddValidatorsFromAssemblyContaining<CarWorkshopDtoValidator>()
+            services.AddValidatorsFromAssemblyContaining<CreateCarWorkshopCommandValidator>()
                 .AddFluentValidationAutoValidation()
                 .AddFluentValidationClientsideAdapters();
         }

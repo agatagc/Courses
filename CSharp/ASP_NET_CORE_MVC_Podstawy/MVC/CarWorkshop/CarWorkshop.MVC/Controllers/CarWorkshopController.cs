@@ -32,7 +32,7 @@ namespace CarWorkshop.MVC.Controllers
             }
 
             await this.carWorkshopService.Create(carWorkshop);
-            return RedirectToAction(nameof(Create));            //TODO: refactor 
+            return RedirectToAction(nameof(Index));            
         }
     }
 }

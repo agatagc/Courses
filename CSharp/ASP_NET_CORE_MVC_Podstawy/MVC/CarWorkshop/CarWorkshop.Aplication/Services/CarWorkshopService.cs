@@ -21,19 +21,12 @@ namespace CarWorkshop.Aplication.Services
         }
         public async Task Create(CarWorkshopDto carWorkshopDto)
         {
-            var carWorkshop =  this.mapper.Map<Domain.Entities.CarWorkshop>(carWorkshopDto);
 
-            carWorkshop.EncodeName();
-
-            await this.carWorkshopRepository.Create(carWorkshop);
         }
 
         public async Task<IEnumerable<CarWorkshopDto>> GetAll()
         {
-            var carWorkshops = await this.carWorkshopRepository.GetAll();
-            var dtos = this.mapper.Map<IEnumerable<CarWorkshopDto>>(carWorkshops);
 
-            return dtos;
         }
     }
 }
