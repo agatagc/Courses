@@ -7,7 +7,7 @@ using MediatR;
 
 namespace CarWorkshop.Aplication.CarWorkshop.Queries.GetAllCarWorkshops
 {
-    internal class GetAllCarWorkshopsQuery : IRequest<IEnumerable<CarWorkshopDto>>
+    public class GetAllCarWorkshopsQuery : IRequest<IEnumerable<CarWorkshopDto>>
     {
     }
 }

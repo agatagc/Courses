@@ -9,7 +9,7 @@ using MediatR;
 
 namespace CarWorkshop.Aplication.CarWorkshop.Queries.GetAllCarWorkshops
 {
-    internal class GetAllCarWorkshopsQueryHandler : IRequestHandler<GetAllCarWorkshopsQuery, IEnumerable<CarWorkshopDto>>
+    public class GetAllCarWorkshopsQueryHandler : IRequestHandler<GetAllCarWorkshopsQuery, IEnumerable<CarWorkshopDto>>
     {
         private readonly ICarWorkshopRepository carWorkshopRepository;
         public IMapper Mapper { get; }
@@ -17,13 +17,13 @@ namespace CarWorkshop.Aplication.CarWorkshop.Queries.GetAllCarWorkshops
         public GetAllCarWorkshopsQueryHandler(ICarWorkshopRepository carWorkshopRepository, IMapper mapper)
         {
             this.carWorkshopRepository = carWorkshopRepository;
-            Mapper = mapper;
+            this.Mapper = mapper;
         }
 
         public  async Task<IEnumerable<CarWorkshopDto>> Handle(GetAllCarWorkshopsQuery request, CancellationToken cancellationToken)
         {
             var carWorkshops = await this.carWorkshopRepository.GetAll();
-            var dtos = this.mapper.Map<IEnumerable<CarWorkshopDto>>(carWorkshops);
+            var dtos = this.Mapper.Map<IEnumerable<CarWorkshopDto>>(carWorkshops);
 
             return dtos;
         }
