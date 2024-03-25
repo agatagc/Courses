@@ -4,6 +4,7 @@ using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 using MediatR;
+using CarWorkshop.Aplication.ApplicationUser;
 
 namespace CarWorkshop.Aplication.Extensions
 {
@@ -11,6 +12,7 @@ namespace CarWorkshop.Aplication.Extensions
     {
         public static void AddAplication(this IServiceCollection services)
         {
+            services.AddScoped<IUserContext, UserContext>();
             services.AddMediatR(typeof(CreateCarWorkshopCommand));
 
             services.AddAutoMapper(typeof(CarWorkshopMappingProfile));

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace CarWorkshop.Domain.Entities
 {
@@ -16,9 +12,11 @@ namespace CarWorkshop.Domain.Entities
 
         public string? About { get; set; }
 
+        public string? CreateById { get; set; }
+        public IdentityUser? CreateBy { get; set; }
+
         public string EncodedName { get; private set; } = default!;
 
         public void EncodeName() => EncodedName = Name.Replace(" ", "-").ToLower();
-       
     }
 }
