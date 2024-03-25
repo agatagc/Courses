@@ -18,6 +18,9 @@ namespace CarWorkshop.Infrastructure.Repositories
             this.dbContext = dbContext;
         }
 
+        public Task Commit()
+            => this.dbContext.SaveChangesAsync();
+
         public async Task Create(Domain.Entities.CarWorkshop carWorkshop)
         {
             this.dbContext.Add(carWorkshop);
