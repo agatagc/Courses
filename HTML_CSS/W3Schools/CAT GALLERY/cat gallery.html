@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona z kotami</title>
+    <style>
+        /* Dodajemy tło ombre */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffb6c1, #add8e6);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Dodajemy kolorowe kwiaty w tle */
+        body::before {
+            content: "";
+            background-image: url('https://www.transparentpng.com/thumb/flower/9c7bqD-abstract-transparent-flower-background.png');
+            opacity: 0.2; /* Możesz dostosować przezroczystość kwiatów */
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: fixed;
+            z-index: -1; /* Ustawiamy niższy indeks, aby kwiaty były z tyłu */
+            background-size: cover;
+            pointer-events: none; /* Wyłączamy interakcję z kwiatami */
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeria Kotów</h1>
+
+    <div class="gallery">
+        <!-- Tutaj będziemy dodawać zdjęcia kotów -->
+    </div>
+</body>
+</html>
+
